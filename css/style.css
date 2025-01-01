@@ -1,0 +1,297 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family:'epika' ;
+    /* src: url(../font_import/NT\ Epika\ Bold\ \(PERSONAL\ USE\).otf); */
+    /* src: url(../font_import/NT\ Epika\ Medium\ \(PERSONAL\ USE\).otf); */
+    /* src: url(../font_import/NT\ Epika\ Regular\ \(PERSONAL\ USE\).otf); */
+    /* src: url(../font_import/NT\ Epika\ Thin\ \(PERSONAL\ USE\).otf) */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  html, body{
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+  }
+
+
+  /* -----------------NAV-BAR--------------  */
+  .container {
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+  }
+  
+  .navbar {
+    position:relative;
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    z-index: 1;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 0.7em;
+    padding: 0.7rem;
+    display: block;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    display: block;
+    height: 32px;
+    width: 32px;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    position:absolute;
+    height: 26px;
+    width: 32px;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    /* background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0 0 2000px rgb(255, 255, 255); */
+    width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding-left: 50px;
+    transition: transform 0.9s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar .menu-items li {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: auto;
+  }
+  
+  .nav-container .logo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    top: 17px;
+    justify-items: end;
+    z-index: 3;
+    margin: 0 30px;
+  }
+  .nav-container .logo img{
+    width:inherit;
+    height: inherit;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: flex;
+  }
+
+
+
+/*------------- Slide css section ---------------------*/
+
+  .carousel-wrapper{
+    display: block;
+    width:auto;
+    height: 45vw;
+    justify-content: center;
+    margin-top:9px;
+    z-index: 2; 
+    margin: 30px 30px 30px 30px;
+}
+
+section img{
+    object-fit: cover;
+    object-position: center;
+  }
+.pic{
+  width: 100%;
+}
+  
+  @keyframes display {
+    0% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+  }
+  .pic-ctn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    object-fit: cover;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: display 20s infinite;
+    box-shadow: -1px 3px 12px -1px rgba(0,0,0,0.75);
+    border-radius: 19px 19px 19px 19px;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 4s;
+  }
+  img:nth-child(3) {
+    animation-delay: 8s;
+  }
+  img:nth-child(4) {
+    animation-delay: 12s;
+  }
+  img:nth-child(5) {
+    animation-delay: 16s;
+  }
+
+
+  /* ------------------ITEMS SECTION----------------- */
+  .bag__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    justify-content: space-evenly;
+    align-items: center;
+    gap:60px;
+    margin: 30px 30px 30px 30px;
+    width: auto;
+  }
+.bag__items img{
+  width: 100%;
+  /* height: auto; */
+  border-radius: 19px 19px 19px 19px;
+  box-shadow: -1px 3px 12px -1px rgba(0,0,0,0.75);
+}
+
+.bag__items img:hover{
+  transform:scale(1.02);
+  transition:0.3s
+}
+
+.bag__items p{
+  margin:20px;
+  font-size:18px;
+}
+
+.footerzin{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: #232F3E;
+  min-width: 100%;
+  position:fixed;
+  bottom: 0;
+
+}
+.footerzin a {
+  color: white;
+}
+
+
+@media (max-width:500px){
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+.navbar {
+  width: 100vw;
+}
+.navbar .menu-items a{
+  font-size:3vw;
+}
+
+}
+
+
