@@ -1,0 +1,20 @@
+.custom-carousel {
+    height: 65vh;
+    /* ou altura desejada do container */
+    overflow: hidden;
+}
+.Maincontent{
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;       
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%; 
+}

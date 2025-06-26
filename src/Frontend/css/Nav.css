@@ -1,0 +1,17 @@
+.nav1_content {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 2fr 3fr;
+}
+
+.nav1_content img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+    padding:0px 15px;
+}
+
+.my-3{
+    
+}

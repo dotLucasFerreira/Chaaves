@@ -1,0 +1,33 @@
+:root {}
+
+body {
+    scroll-behavior: smooth;
+    background-color: rgba(78, 78, 77, 0.438);
+    font-family: "Tinos", serif;
+    font-weight: 400;
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.App {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "footer"
+}
