@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Chaaves/static/css/main.c554c58d.css",
+    "main.js": "/Chaaves/static/js/main.5986a63b.js",
+    "static/js/453.08684bc0.chunk.js": "/Chaaves/static/js/453.08684bc0.chunk.js",
+    "static/media/Bolacha__Brown00.jpg": "/Chaaves/static/media/Bolacha__Brown00.723afb57a4978a29ab96.jpg",
+    "static/media/Bag__Boho_azul00.jpg": "/Chaaves/static/media/Bag__Boho_azul00.0e8a9790324331484196.jpg",
+    "static/media/Bag__Mondrian_star02.jpg": "/Chaaves/static/media/Bag__Mondrian_star02.63dbc4f32f8f3674f28c.jpg",
+    "static/media/Bag__Boho_laranja00.jpg": "/Chaaves/static/media/Bag__Boho_laranja00.87364cc66300c89c86b3.jpg",
+    "static/media/Chaavesiconwhite.png": "/Chaaves/static/media/Chaavesiconwhite.1ca80f850fe49cb02d4e.png",
+    "index.html": "/Chaaves/index.html",
+    "main.c554c58d.css.map": "/Chaaves/static/css/main.c554c58d.css.map",
+    "main.5986a63b.js.map": "/Chaaves/static/js/main.5986a63b.js.map",
+    "453.08684bc0.chunk.js.map": "/Chaaves/static/js/453.08684bc0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c554c58d.css",
+    "static/js/main.5986a63b.js"
+  ]
+}
